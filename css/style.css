@@ -1,3 +1,28 @@
+@media (max-width: 869px) {
+  #mainWrapper {
+    position: relative;
+    float: left;
+    width: 100%; }
+
+  nav {
+    display: none; } }
+@media (min-width: 870px) {
+  #mainWrapper {
+    position: relative;
+    float: left;
+    width: 75%; }
+
+  nav {
+    float: right;
+    width: 23%;
+    position: fixed;
+    top: 25px;
+    right: 20px; }
+    nav h4 {
+      border-bottom: 2px solid black;
+      margin-bottom: 10px; }
+    nav li {
+      margin-bottom: 4px; } }
 *,
 *:after,
 *:before {
@@ -5,7 +30,7 @@
 
 body {
   font-size: 15px;
-  font-family: Helvetica;
+  font-family: 'Raleway', Helvetica, sans-serif;
   margin: 20px; }
 
 div {
@@ -13,11 +38,6 @@ div {
 
 p {
   line-height: 16px; }
-
-#mainWrapper {
-  position: relative;
-  float: left;
-  width: 75%; }
 
 #maintitle {
   font-size: 40px;
@@ -37,19 +57,6 @@ header {
   font-size: 20px;
   opacity: .5;
   font-style: italic; }
-
-nav {
-  float: right;
-  width: 23%;
-  position: fixed;
-  top: 25px;
-  right: 20px; }
-
-nav h4 {
-  border-bottom: 2px solid black;
-  margin-bottom: 10px; }
-nav li {
-  margin-bottom: 4px; }
 
 .sectionTitle {
   background-color: #000;
@@ -129,8 +136,8 @@ footer {
   width: 200px;
   padding: 10px;
   margin: 0 auto;
-  background: #333;
-  color: #fff;
+  background: #f9edf4;
+  color: #090948;
   outline: none;
   cursor: pointer;
   font-weight: bold; }
@@ -143,7 +150,7 @@ footer {
     right: 0;
     /* Size */
     /* Styles */
-    background: #fff;
+    background: #f9edf4;
     font-weight: normal;
     /* Overwrites previous font-weight: bold; */
     /* Hiding */
@@ -152,10 +159,11 @@ footer {
     .dropdownWrapper .dropdown li a {
       display: block;
       text-decoration: none;
-      color: #9e9e9e;
+      color: #090948;
       padding: 10px 20px; }
     .dropdownWrapper .dropdown li:hover a {
-      background: black; }
+      background-color: #090948;
+      color: #f9edf4; }
 
 .dropdownWrapper:after {
   content: "";
@@ -167,7 +175,49 @@ footer {
   margin-top: -6px;
   border-width: 6px 0 6px 6px;
   border-style: solid;
-  border-color: transparent #fff; }
+  border-color: transparent #090948; }
+
+/* Active state */
+.dropdownWrapper.active .dropdown {
+  opacity: 1;
+  pointer-events: auto; }
+
+.dropdownWrapper.active:after {
+  border-color: #f9edf4 transparent;
+  border-width: 6px 6px 0 6px;
+  margin-top: -3px; }
+
+.dropdownWrapper.active {
+  background: #f9edf4;
+  background: linear-gradient(to right, #f9edf4 0%, #f9edf4 78%, #090948 78%, #090948 100%); }
+
+#navbar {
+  width: 100%;
+  text-align: center;
+  height: 46px; }
+  #navbar ul {
+    display: inline-table; }
+    #navbar ul a {
+      color: #82084D;
+      font-style: normal; }
+    #navbar ul li {
+      float: left;
+      width: 150px;
+      padding: 10px 0 10px 0; }
+    #navbar ul li:hover a {
+      color: black; }
+    #navbar ul li:hover ul {
+      display: block; }
+    #navbar ul .navbarInnerDD {
+      display: none;
+      padding: 0;
+      position: absolute;
+      z-index: 2; }
+      #navbar ul .navbarInnerDD li {
+        float: none;
+        padding: 5px 0 0 0; }
+      #navbar ul .navbarInnerDD li:hover {
+        color: #82084D; }
 
 .radio:hover, .checkbox:hover {
   cursor: pointer; }
@@ -188,11 +238,6 @@ fieldset #radioSelection > label, fieldset #checkSelection > label {
   margin-right: 20px; }
 fieldset #radioSelection > input, fieldset #checkSelection > input {
   margin-right: 6px; }
-fieldset textarea {
-  width: 300px;
-  height: 70px; }
-fieldset #submit {
-  text-align: right; }
 fieldset input[type="text"] {
   padding: 3px;
   border: none;
@@ -213,3 +258,33 @@ fieldset input[type="date"]:hover, fieldset textarea:hover {
   outline: none;
   border: 2px solid black;
   background-color: #eee; }
+fieldset textarea {
+  width: 300px;
+  height: 70px; }
+fieldset #formButton {
+  text-align: right; }
+fieldset #formSubmit {
+  border: 1px solid black;
+  background: white;
+  padding: 4px 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0;
+  color: black;
+  font-size: 12px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-decoration: none;
+  outline: none;
+  vertical-align: middle; }
+fieldset #formSubmit:hover {
+  border-color: #E30004;
+  color: #E30004;
+  box-shadow: 0;
+  outline: none; }
+fieldset #formSubmit:active {
+  border-color: #E30004;
+  background-color: #E30004;
+  color: white;
+  outline: none;
+  box-shadow: 0; }

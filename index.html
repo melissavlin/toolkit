@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -70,22 +72,71 @@
 	</div>
 		<div class ="content">
 			
-			<p> Vertical dropdown menu</p>
+			<div id="clickDDmenu">
+				<h5 class="subcontent">dropdown menu</h5>
 
-			<div class="example">
+				<p> clickable vertical dropdown menu</p>
 
-				<div id="dd" class="dropdownWrapper" tabindex="1">
-					
-					<span>DROP(it)DOWN</span>
+				<div class="example">
 
-					<ul class="dropdown">
-						<li><a href="#">LINK 1</a></li>
-						<li><a href="#">LINK 2</a></li>
-						<li><a href="#">LINK 3</a></li>
-					</ul>
+					<div id="dd" class="dropdownWrapper" tabindex="1">
+						
+						<span>DROP(it)DOWN</span>
+
+						<ul class="dropdown">
+							<li><a href="#">LINK 1</a></li>
+							<li><a href="#">LINK 2</a></li>
+							<li><a href="#">LINK 3</a></li>
+						</ul>
+
+					</div>
 
 				</div>
+			</div>
 
+
+			<div id="hoverNav">
+				<h5 class="subcontent">navigation bar</h5>
+				<p> horizontal navigation bar with optional dropdown menu on hover</p>
+
+				<div id="navbar">
+					<ul>
+						<a href="#"><li>About</a>
+
+							<ul class="navbarInnerDD">
+								<a href="#"><li>Press</li></a>
+							</ul>
+
+						</li>
+
+						<a href="#"><li>Features</a>
+							<ul class="navbarInnerDD">
+								<a><li>Events</li></a>
+								<a><li>Articles</li></a>
+							</ul>
+						</li>
+
+						<a><li>Categories</a>
+							<ul class="navbarInnerDD">
+								<a><li>Style</li></a>
+								<a><li>Travel</li></a>
+								<a><li>Food & Beverage</li></a>
+							</ul>
+						</li>
+
+						<li><a>Contact</a>
+							<ul class="navbarInnerDD">
+								<a href="mailto:melissavlin@gmail.com"><li>email</li></a>
+								<a href="http://www.twitter.com/melponders" target="_blank"><li>twitter</li></a>
+								<a href="http://www.instagram.com/melissavlin" target="_blank"><li>instagram</li></a>
+							</ul>
+						</li>
+
+					</ul>
+
+
+					</div>
+	
 			</div>
 		</div>
 	</div>
@@ -165,7 +216,7 @@
 
 						<tr>
 							<td></td>
-							<td id="submit"><input type="submit" value="submit"></td>
+							<td id="formButton"><input type="submit" value="submit" id="formSubmit"></td>
 
 						</tr>
 

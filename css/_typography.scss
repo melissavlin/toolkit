@@ -1,0 +1,56 @@
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	// color:#FF4D4D;
+	// color: black;
+	color: #303083;
+	font-style: italic
+
+}
+
+a:hover {
+	// text-decoration:;
+	font-style: normal;
+}
+
+#highlight {
+	// background-color: #FFE6F2;
+	background-color: #E0FFE0;
+	font-style: italic;
+}
+
+em, .subcontent {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+h1 {
+	font-size: 40px;
+}
+
+h2{
+	font-size: 35px;
+}
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 27px;
+}
+h5{
+	font-size: 24px;
+}
+h6{
+	font-size:20px;
+}
+
+footer {
+	font-size: 12px;
+	opacity: .75;
+	line-height: 16px;
+
+}
