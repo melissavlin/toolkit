@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> my toolkit </title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+<div id="mainWrapper">
+	<header>
+		<span id="maintitle">my toolkit</span>
+
+		<p><span id="subtitle">standard styling</span></p>
+	</header>
+	<!-- font typography ie: headers, standard font size, in-line links -->
+
+	<div class="section">
+
+	<div class = "sectionTitle">
+		<h5 id="typeSection">typography</h5>
+		<div class="showHideTab">+</div>
+	</div>
+	<!-- <div class="headerline"></div> -->
+		<div class ="content">
+			<h5 class="subcontent">standard type</h5>
+
+			<p> standard font size sz. 15px</p>
+			<p><em>italic</em></p>
+			<p><strong>bold</strong></p>
+			<p><a href="/"> standard link</a> </p>
+
+				<div class="example">
+					<p>Lorem ipsum dolor sit amet, consectetur <a href="/">adipisicing</a> elit. Dolorum vitae tempora, magnam illo accusantium aut?</p>
+				</div>
+
+			<p><span id="highlight"> standard highlight</span></p>
+
+				<div class="example">
+					<p>Optio necessitatibus natus odit eligendi consequatur, nam <span id="highlight">voluptatibus</span> nemo facere minima, delectus.</p>
+				</div>
+
+			<div id="headerclass">
+				<h5 class="subcontent">headers</h5>
+					<h1>h1 header tag</h1>
+					<h2>h2 header tag</h2>
+					<h3>h5 header tag</h3>
+					<h4>h4 header tag</h4>
+					<h5>h5 header tag</h5>
+					<h6>h6 header tag</h6>
+			</div>
+
+			<div id="footerclass">
+				<h5 class="subcontent">footer</h5>
+
+					<footer>Footer content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium dicta saepe adipisci similique commodi delectus modi distinctio iste. Magnam nam asperiores rerum quia architecto error, facere cum aperiam aliquam deleniti veniam, repudiandae a delectus! Exercitationem maxime, eum quo a maiores molestias? </footer>	
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+	<div class = "sectionTitle">
+	<!-- navigation: horizontal, vertical -->
+		<h5 id="navSection">navigation</h5>
+		<div class="showHideTab">+</div>
+	</div>
+		<div class ="content">
+			
+			<p> Vertical dropdown menu</p>
+
+			<div class="example">
+
+				<div id="dd" class="dropdownWrapper" tabindex="1">
+					
+					<span>DROP(it)DOWN</span>
+
+					<ul class="dropdown">
+						<li><a href="#">LINK 1</a></li>
+						<li><a href="#">LINK 2</a></li>
+						<li><a href="#">LINK 3</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="section">
+	<div class = "sectionTitle">
+	<!-- forms: input text box, text area with standard submit button, drop down menu -->
+		<h5 id="formSection"> forms</h5>
+		<div class="showHideTab">+</div>
+	</div>
+		<div class ="content">
+		<p>Standard form elements.</p>
+		
+			<div class="example">
+				<form>
+				<fieldset>
+				
+					<table>
+						<tr>
+							<td class="formLabel">
+								<label for="inputBox">input text field </label></td>
+							<td> <input id="inputBox" type="text" placeholder="?"/> </td>
+						</tr>
+
+						<tr>
+							<td class="formLabel"><label for="datefield">input date</label></td>
+							<td> <input id="dateBox" type="date" name="datefield"></td>
+						</tr>
+
+						<tr>
+							<td class="formLabel"> <label for="radioSelection">radio selection</label></td>
+							<td>
+								<fieldset id="radioSelection">
+								<input type="radio" name="radio" value="optiona" class="radio"><label for="radio">option a</label>
+								<input type="radio" name="radio" value="optionb" class="radio"><label for="radio">option b</label>
+								<input type="radio" name="radio" value="optionc" class="radio"><label for="radio">option c</label>
+								</fieldset>
+							</td>
+						</tr>
+
+		<!-- 				<tr>
+							<td class="formLabel"> <label for="radio2">radio option 2</label></td>
+							<td>
+								<fieldset id="radio2">
+								<input type="radio" name="radio" value="optiona" class="radio" checked><label for="radio">option a</label>
+								<input type="radio" name="radio" value="optionb" class="radio"><label for="radio">option b</label>
+								<input type="radio" name="radio" value="optionc" class="radio"><label for="radio">option c</label>
+								</fieldset>
+							</td>
+						</tr> -->
+
+						<tr>
+							<td class="formLabel"><label for="checkSelection">checkboxes </label></td>
+							<td>
+								<fieldset id="checkSelection">
+								<input type="checkbox" name="checkbox" value="optiona" class="checkbox"><label for="checkbox">option a</label>
+								<input type="checkbox" name="checkbox" value="optionb" class="checkbox"><label for="checkbox">option b</label>
+								<input type="checkbox" name="checkbox" value="optionc" class="checkbox"><label for="checkbox">option c</label>
+								</fieldset>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="formLabel"><label for="textarea">textarea</label></td>
+							<td><textarea name="textarea" id="textBox"placeholder="..."></textarea> </td>
+						</tr>
+
+						<tr> 
+							<td class="formLabel"><label for="dropdown">dropdown menu</label></td>
+							<td> <select name="dropdown">
+									<option value="a">alpha</option>
+									<option value="b">beta</option>
+									<option value="c">gamma</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td id="submit"><input type="submit" value="submit"></td>
+
+						</tr>
+
+					</table>
+				</fieldset>
+				</form>
+
+			</div>
+		</div>
+		</div>
+
+	<div class="section">
+	<div class = "sectionTitle">	
+		<h5 id="buttonSection">buttons</h5>
+		<div class="showHideTab">+</div>
+	<!-- button type: different colors, various sizes -->
+	</div>
+
+		<div class ="content">
+
+		</div>
+	</div>
+
+<nav>
+<h4> <strong>index</strong></h4>
+
+	<ul>
+		<li><a href="#typeSection">typography</a></li>
+		<li><a href="#navSection">navigation</a></li>
+		<li><a href="#formSection">forms</a></li>
+		<li><a href="#buttonSection">buttons</a></li>
+	</ul>
+	
+</nav>
+
+
+
+
+
+
+	
+</body>
+</html>

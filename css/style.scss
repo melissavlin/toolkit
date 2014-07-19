@@ -1,0 +1,330 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+$popcolor: #F0E0B2;
+
+body {
+	font-size: 15px;
+	font-family: Helvetica;
+	margin: 20px;
+
+}
+
+div {
+	margin-top: 5px;
+}
+
+p {
+	line-height: 16px;
+}
+#mainWrapper {
+	position: relative;
+	float: left;
+	width: 75%;
+
+}
+#maintitle {
+	font-size: 40px;
+	font-weight: bold;
+
+}
+
+header {
+	width: 200px;
+	text-align: right;
+	margin-bottom:20px;
+}
+
+.headerline {
+	height: 5px;
+	background-color: $popcolor;
+	margin-top:0px;
+}
+#subtitle {
+	font-size: 20px;
+	opacity: .5;
+	font-style: italic;
+
+}
+
+nav {
+	// position: absolute;
+	float: right;
+	width: 23%;
+	// padding-left: 20px;
+	position: fixed;
+	top:25px;
+	right:20px;
+
+}
+
+nav {
+
+	h4{
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+}
+	li{
+		margin-bottom: 4px;
+	}
+}
+
+.sectionTitle {
+	background-color:#000;
+	padding: 3px;
+	color: white;
+	cursor: pointer;
+	h5{
+		width: 93%;
+		display: inline-block;
+	}
+	.showHideTab{
+		width: 5%;
+		display: inline-block;
+		text-align: right;
+		font-size: 30px;
+		line-height: 10px;
+
+	}
+}
+
+.content {
+	margin-left: 20px;
+	margin-bottom: 40px;
+	display: none;
+}
+
+.subcontent {
+	border-bottom: 2px solid black;
+	margin-top: 30px;
+	margin-bottom:10px;
+}
+
+.example {
+	width: 75%;
+	margin: 0 auto;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+
+//  TYPOGRAPHY STYLING
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	// color:#FF4D4D;
+	// color: black;
+	color: #303083;
+	font-style: italic
+
+}
+
+a:hover {
+	// text-decoration:;
+	font-style: normal;
+}
+
+#highlight {
+	// background-color: #FFE6F2;
+	background-color: #E0FFE0;
+	font-style: italic;
+}
+
+em, .subcontent {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+h1 {
+	font-size: 40px;
+}
+
+h2{
+	font-size: 35px;
+}
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 27px;
+}
+h5{
+	font-size: 24px;
+}
+h6{
+	font-size:20px;
+}
+
+footer {
+	font-size: 12px;
+	opacity: .75;
+	line-height: 16px;
+
+}
+
+// NAVIGATION STYLING
+
+.dropdownWrapper {
+	// side and position
+	position: relative;
+	width: 200px;
+	padding: 10px;
+	margin: 0 auto;
+
+	// styles
+	background: #333;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	font-weight:bold;
+	
+	.dropdown {
+	    /* Size & position */
+	    position: absolute;
+	    top: 100%;
+	    left: 0; /* Size */
+	    right: 0; /* Size */
+	 
+	    /* Styles */
+	    background: #fff;
+	    font-weight: normal; /* Overwrites previous font-weight: bold; */
+	 
+	    /* Hiding */
+	    opacity: 0;
+	    pointer-events: none;
+
+	    li {
+	    	a{
+				display: block;
+			    text-decoration: none;
+			    color: #9e9e9e;
+			    padding: 10px 20px;
+			}
+
+	    }
+
+	    li:hover a {
+	    	background: black;
+	    }
+	}
+
+}
+
+.dropdownWrapper:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent #fff;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FORM STYLING
+
+.radio:hover, .checkbox:hover{
+		cursor: pointer;
+}
+
+#radioSelection, #checkSelection {
+	// padding-left: 15px;
+	// text-align: center;
+	// label {
+	// margin-left: 6px;
+	// margin-right: 20px;
+	// }
+
+}
+
+form {
+	margin-top: 20px;
+	width: 100%;
+	// text-align: center;
+
+}
+
+fieldset {
+	td {
+		padding-bottom: 10px;
+	}
+	.formLabel{
+		line-height: 19px;
+		padding-top: 2px;
+		padding-right: 40px;
+		vertical-align: middle;
+		font-style: italic;
+	}
+	
+	#radioSelection > label, #checkSelection > label{
+			margin-right: 20px;
+	}
+
+	#radioSelection > input, #checkSelection > input{
+		margin-right: 6px;
+	}
+	textarea {
+		width: 300px;
+		height: 70px;
+	}
+	#submit {
+		text-align: right;
+	}
+
+	input[type="text"]{
+		padding: 3px;
+		border:none;
+		border-bottom: 2px solid #888;
+		// background-color: #eee;
+	}
+	
+	input[type="text"]:focus {
+		outline:none;
+		border-bottom:2px solid black;
+	}
+
+	input[type="text"]:hover {
+		outline:none;
+		border-bottom:2px solid black;
+		background-color: #eee;
+	}
+
+	input[type="date"], textarea{
+		border:2px solid #888;
+	}
+
+	input[type="date"]:focus, textarea:focus{
+		outline:none;
+		border:2px solid black;
+	}
+
+	input[type="date"]:hover, textarea:hover{
+		outline:none;
+		border:2px solid black;
+		background-color: #eee;
+	}
+}
+
+
+
