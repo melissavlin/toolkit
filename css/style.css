@@ -191,34 +191,59 @@ footer {
   background: #f9edf4;
   background: linear-gradient(to right, #f9edf4 0%, #f9edf4 78%, #090948 78%, #090948 100%); }
 
-#navbar {
-  width: 100%;
-  text-align: center;
-  height: 46px; }
-  #navbar ul {
-    display: inline-table; }
-    #navbar ul a {
-      color: #82084D;
-      font-style: normal; }
-    #navbar ul li {
-      float: left;
-      width: 150px;
-      padding: 10px 0 10px 0; }
-    #navbar ul li:hover a {
-      color: black; }
-    #navbar ul li:hover ul {
-      display: block; }
-    #navbar ul .navbarInnerDD {
-      display: none;
-      padding: 0;
-      position: absolute;
-      z-index: 2; }
-      #navbar ul .navbarInnerDD li {
-        float: none;
-        padding: 5px 0 0 0; }
-      #navbar ul .navbarInnerDD li:hover {
-        color: #82084D; }
-
+@media (max-width: 869px) {
+  #navbar {
+    margin-left: -10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px; }
+    #navbar ul {
+      display: block;
+      margin-bottom: 5px; }
+      #navbar ul a {
+        color: #82084d;
+        font-style: normal; }
+      #navbar ul a:hover {
+        color: black; }
+      #navbar ul li {
+        position: relative;
+        padding-right: 5px;
+        padding-top: 5px;
+        vertical-align: text-top;
+        display: inline-block; }
+      #navbar ul ul li {
+        position: relative;
+        display: block;
+        padding-bottom: 5px;
+        text-align: center; } }
+@media (min-width: 870px) {
+  #navbar {
+    width: 100%;
+    text-align: center;
+    height: 46px; }
+    #navbar ul {
+      display: inline-table; }
+      #navbar ul a {
+        color: #82084d;
+        font-style: normal; }
+      #navbar ul li {
+        float: left;
+        width: 150px;
+        padding: 10px 0 10px 0; }
+      #navbar ul li:hover a {
+        color: black; }
+      #navbar ul li:hover ul {
+        display: block; }
+      #navbar ul .navbarInnerDD {
+        display: none;
+        padding: 0;
+        position: absolute;
+        z-index: 2; }
+        #navbar ul .navbarInnerDD li {
+          float: none;
+          padding: 5px 0 0 0; }
+        #navbar ul .navbarInnerDD li:hover {
+          color: #82084d; } }
 .radio:hover, .checkbox:hover {
   cursor: pointer; }
 
